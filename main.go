@@ -30,7 +30,6 @@ func getSpeed() {
 		s.UploadTest()
 		endtime = time.Now().UnixMilli()
 		utils.UpdateData(t.Format("15:04"), s.DLSpeed, s.ULSpeed)
-		fmt.Printf("Latency: %s, Download: %f, Upload: %f\n", s.Latency, s.DLSpeed, s.ULSpeed)
 		s.Context.Reset()
 
 	}

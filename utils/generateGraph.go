@@ -9,11 +9,13 @@ import (
 func GenerateGraph(c *gin.Context) {
 	time, download, upload := ConvertToGraphDataType(GetData())
 	bar := charts.NewLine()
-	bar.SetGlobalOptions(charts.WithTitleOpts(opts.Title{
-		Title: "Wifi Speed Watcher",
-	}))
+	bar.SetGlobalOptions(
+		charts.WithTitleOpts(opts.Title{
+			Title: "Wifi Speed Watcher",
+		}))
 	bar.SetXAxis(time).
 		AddSeries("Download Speed", download).
-		AddSeries("Upload Speed", upload)
+		AddSeries("Upload Speed", upload).
+		SetSeriesOptions(charts.WithLineChartOpts(opts.LineChart{Smooth: true}))
 	bar.Render(c.Writer)
 }
