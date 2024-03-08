@@ -29,5 +29,5 @@ Default: 8080
 Example: `-port 8000`
  
 `-interval`
-Default: 300 (5 Minutes)
-Example: `-interval 150`
+Default: 300 (seconds)
+ Example: `-interval 150`
