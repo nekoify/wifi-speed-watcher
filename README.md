@@ -13,8 +13,11 @@ A little program I designed to continuously monitor and record your WiFi speed o
 git clone https://github.com/nekoify/wifi-speed-watcher
 cd wifi-speed-watcher
 go get .
+ 
 go build .
 ./main
+# OR
+# go run .
 ```
 #### Parameters (Not Implemented)
 `-port` 
