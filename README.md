@@ -16,8 +16,13 @@ go get .
  
 go build .
 ./main
-# OR
-# go run .
+```
+OR
+```
+git clone https://github.com/nekoify/wifi-speed-watcher
+cd wifi-speed-watcher
+go get .
+go run .
 ```
 #### Parameters (Not Implemented)
 `-port` 
