@@ -26,25 +26,23 @@ go get .
 go run .
 ```
 #### Parameters (Not Implemented)
-`-port` - Sets the port that the dashboard runs on
+`-port` - Sets the port that the dashboard runs on\
  
- Default: 8080
+ Default: 8080\
   
- Example: `-port 8000`
+ Example: `-port 8000`\
   
+`-interval` - Sets the interval that the speed is recorded at in seconds\
+  
+ Default: 300\
+  
+ Example: `-interval 150`\
  
-`-interval` - Sets the interval that the speed is recorded at in seconds
- 
- Default: 300
+ `-clean` - Wipes all previous data\
   
- Example: `-interval 150`
- 
- 
- `-clean` - Wipes all previous data
+ Default: N/A\
   
- Default: N/A
-  
- Example: `-clean`
+ Example: `-clean`\
 
 ## Screenshot
 
