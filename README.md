@@ -38,7 +38,7 @@ go run .
  Default: 300
   
  Example: `-interval 150`
-
+ 
  
  `-clean` - Wipes all previous data
   
