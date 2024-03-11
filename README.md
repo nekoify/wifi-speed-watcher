@@ -9,6 +9,7 @@ Checked on Linux, no clue if it works on Windows or macOS but will be tested lat
 - [ ] Maybe release builds at https://github.com/nekoify/wifi-speed-watcher/releases
 - [ ] Fix the datastore so it will check that all files exist instead of only one before creating files
 - [ ] If the set interval is lower then the time to finish a speed test, wait till speed test finishes
+- [ ] Docker Support
 
 ## How to run
 ### Building from source
