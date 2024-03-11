@@ -8,6 +8,7 @@ Checked on Linux, no clue if it works on Windows or macOS but will be tested lat
 - [ ] Add CLI params (Options to set the port for the dashboard and to set the interval that the wifi speed is recorded at)
 - [ ] Maybe release builds at https://github.com/nekoify/wifi-speed-watcher/releases
 - [ ] Fix the datastore so it will check that all files exist instead of only one before creating files
+- [ ] If the set interval is lower then the time to finish a speed test, wait till speed test finishes
 
 ## How to run
 ### Building from source
