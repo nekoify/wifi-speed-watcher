@@ -2,13 +2,13 @@
 
 A little program I designed to continuously monitor and record your WiFi speed over time and then present the data in a graph.
  
-Checked on Linux, no clue if it works on Windows or macOS but will be tested later on.
+Works on Linux, no clue if it works on Windows or macOS but will be tested later on.
 
 ## TODO
 - [ ] Add CLI args (Options to set the port for the dashboard and to set the interval that the wifi speed is recorded at)
 - [ ] Maybe release builds at https://github.com/nekoify/wifi-speed-watcher/releases
 - [ ] Fix the datastore so it will check that all files exist instead of only one before creating files
-- [ ] If the set interval is lower then the time to finish a speed test, wait till speed test finishes
+- [ ] If the set interval is lower than the time to finish a speed test, wait till the speed test finishes
 - [ ] Docker Support
 
 ## How to run
