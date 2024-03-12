@@ -27,7 +27,7 @@ cd wifi-speed-watcher
 go get .
 go run . [args]
 ```
-#### Arguments (Not Implemented)
+#### Arguments
 `-port` - Sets the port that the dashboard runs on
  
  Default: 8080
