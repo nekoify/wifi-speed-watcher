@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"main/config"
 	"main/utils"
 	"main/webserver"
 	"time"
@@ -12,11 +13,13 @@ import (
 func main() {
 	go utils.InitDataStore()
 	time.Sleep(1 * time.Second)
-	go webserver.StartWebsever()
+	config.InitArgs()
+	webserver.StartWebsever()
 	getSpeed()
 }
 
 func getSpeed() {
+
 	var t = time.Now()
 	var endtime int64 = 0
 	var startTime = t.UnixMilli()
@@ -33,8 +36,8 @@ func getSpeed() {
 		s.Context.Reset()
 
 	}
-	// 5 mins - time to run speedtest
-	var waitTime = 300000 - (endtime - startTime)
+	// interval - time to run speedtest
+	var waitTime = (*config.Interval * 1000) - (endtime - startTime)
 	time.Sleep((time.Duration(waitTime) * time.Millisecond))
 	getSpeed()
 }

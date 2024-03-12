@@ -74,5 +74,4 @@ func InitDataStore() {
 			fmt.Println(err)
 		}
 	}
-	fmt.Println("done")
 }
