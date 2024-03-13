@@ -20,13 +20,6 @@ go get .
 go build .
 ./main [args]
 ```
-OR
-```
-git clone https://github.com/nekoify/wifi-speed-watcher
-cd wifi-speed-watcher
-go get .
-go run . [args]
-```
 #### Arguments
 `-port` - Sets the port that the dashboard runs on
  
