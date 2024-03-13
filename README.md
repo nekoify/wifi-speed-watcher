@@ -6,7 +6,7 @@ Works on Linux, no clue if it works on Windows or macOS but will be tested later
 
 ## TODO
 - [x] Add CLI args (Options to set the port for the dashboard and to set the interval that the wifi speed is recorded at)
-- [ ] Maybe release builds at https://github.com/nekoify/wifi-speed-watcher/releases
+- [x] Maybe release builds at https://github.com/nekoify/wifi-speed-watcher/releases
 - [ ] Fix the datastore so it will check that all files exist instead of only one before creating files
 - [ ] Docker Support
 
